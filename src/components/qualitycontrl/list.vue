@@ -2,9 +2,9 @@
   <el-row class="warp">
     <el-col :span="24" class="warp-breadcrum">
       <el-breadcrumb separator="/">
-        <el-breadcrumb-item :to="{ path: '/' }"><b>首页</b></el-breadcrumb-item>
-        <el-breadcrumb-item>图书管理</el-breadcrumb-item>
-        <el-breadcrumb-item>图书分类</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/' }"><span class="fa fa-home"><b>  首页</b></span></el-breadcrumb-item>
+        <el-breadcrumb-item>质量管理</el-breadcrumb-item>
+        <el-breadcrumb-item>质量分类</el-breadcrumb-item>
       </el-breadcrumb>
     </el-col>
 

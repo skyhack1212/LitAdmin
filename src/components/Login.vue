@@ -45,10 +45,11 @@
         this.$refs.AccountFrom.validate((valid) => {
           if (valid) {
             this.loading = true;
-            let loginParams = {username: this.account.username, pwd: this.account.pwd};
+            // let loginParams = {username: this.account.username, pwd: this.account.pwd};
+            let loginParams = {username: this.account.username, password: this.account.pwd};
             API.login(loginParams).then(function (result) {
               that.loading = false;
-              if (result && result.id) {
+              if (result && result.errno == 0) {
                 localStorage.setItem('access-user', JSON.stringify(result));
 //                that.$store.commit('SET_ROUTERS', user.permissions)
 //                that.$router.addRoutes(that.$store.getters.addRouters);
